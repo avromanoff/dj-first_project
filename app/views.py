@@ -37,6 +37,4 @@ def workdir_view(request):
     # который возвращает список файлов в рабочей 
     # директории
     msg = f'Файлы в каталоге: {", ".join(listdir())}'
-    # print(listdir(path='..'))
-    # raise NotImplemented
     return HttpResponse(msg)
